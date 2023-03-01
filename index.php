@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link rel="stylesheet" type="text/css" href="fontawesome-free-6.2.1-web/css/all.css">
+<title>HTML CSS JS</title>
+   <style>
+   
+     .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: seagreen;
+  }
+  .header-left  {
+    margin-left: 10px;
+  }
+  .header-right {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  .login-link {
+    color: red;
+    text-decoration: none;
+    font-size: 16px;
+  }
+      .section-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+   /* background-color: rgb(217, 217, 217);*/
+   background-color:lightblue;
+  }
+  .quote {
+    width: 60%;
+    text-align: center;
+  }
+  .quote p {
+    margin: 0;
+    font-size: 36px;
+    font-style: italic;
+    color: #333;
+  }
+  aside {
+    width: 40%;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .book-seat-btn,
+  .complaint-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 10px 0;
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+  }
+  .book-seat-btn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); /* Add a nice shadow effect on hover */
+}
+  .complaint-btn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); /* Add a nice shadow effect on hover */
+}
+    /* Footer Styles */
+   footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      align-items: center;
+      text-align: center;
+      font-family: system-ui;
+    }
+
+  /* Random Text */
+ 
+
+  
+
+  
+  @media (max-width: 480px) {
+    .header-container {
+      flex-direction: row;
+      height: 50px;
+      background-color:seagreen;
+    }
+    .header-left {
+      text-align: center;
+      margin: 5px 5px;
+    }
+    .header-right {
+      text-align: center;
+      margin: 5px 5px;
+    }
+     .section-container {
+      flex-direction: row;
+      height: 40%;
+      margin-top: 10px;
+    }
+    .quote p {
+      font-size: 19px;
+      text-align :justify;
+      margin-left:10px;
+      text-align:rignt;
+      margin-bottom:30px;
+     
+    }
+    .book-seat-btn,
+  .complaint-btn{
+
+    width: auto;
+    height: auto;
+  }
+
+    aside {
+      width: 40%;
+      margin: 10px 0;
+    }
+      
+
+  }</style>
+
+
+
+
+</head>
+<body background="" >
+<header>
+  <div class="header-container">
+    <div class="header-left">
+      <h1><i class='fas fa-bus'style='font-size:40px;color:white;'></i></h1>
+    </div>
+    <div class="header-right">
+      <a href="login.php" class="login-link"><i class='fas fa-user-circle' style='font-size:36px ;color:white;'></i></a>
+    </div>
+  </div>
+</header>
+  <section>
+  <div class="section-container">
+    <div class="quote">
+      <p>"The best way to complete the journey is to start it."</p>
+    </div>
+    <aside>
+      <div class="buttons">
+        <a href="login.php" class="book-seat-btn">Book Seat</a>
+        <a href="login.php" class="complaint-btn"> Make a Complaint</a>
+ 
+      </div>
+    </aside>
+  </div>
+</section>
+<footer>
+    <div style="display: block,;">
+      <div>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      </div>
+      <div style="margin-left: auto;">
+        <p>Contact Us:</p>
+        <a href="#">
+          <i class="fas fa-envelope" style="color: white;"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-instagram" style="color: white;"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-facebook" style="color: white;"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-twitter" style="color: white;"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
